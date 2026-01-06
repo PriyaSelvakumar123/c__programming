@@ -13,15 +13,12 @@ int main()
 {
     struct student *head = NULL, *temp = NULL, *newnode;
     int id;
-
     while (1)
     {
         printf("Enter ID (-1 to stop): ");
         scanf("%d", &id);
-
         if (id == -1)
             break;
-
         newnode = (struct student *)malloc(sizeof(struct student));
 
         newnode->id = id;
